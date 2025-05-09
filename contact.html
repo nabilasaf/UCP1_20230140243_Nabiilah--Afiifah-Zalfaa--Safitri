@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak EduSmart</title>
+  <link rel="stylesheet" href="contac.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Hubungi Kami</h1>
+    <form onsubmit="return kirimPesan()">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="minat">Minat Belajar:</label>
+      <select id="minat" name="minat">
+        <option value="bahasa">Bahasa</option>
+        <option value="matematika">Matematika</option>
+        <option value="sains">Sains</option>
+        <option value="pemrograman">Pemrograman</option>
+      </select>
+
+      <form onsubmit="return kirimPesan()">
+        <!-- input, select, etc -->
+        <button type="submit">Kirim</button>
+      </form>
+      
+      <a href="index.html" class="back-btn">Kembali ke Halaman Utama</a>
+    </form>
+  </div>      
+  <script>
+    function kirimPesan() {
+      alert("📩 Pesan Anda terkirim! Kami akan segera menghubungi Anda.");
+      return false;
+    }
+  </script>
+</body>
+</html>
