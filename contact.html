@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <h1>Hubungi Kami</h1>
-    <form onsubmit="return kirimPesan()">
+    <form id="kontakForm" onsubmit="return kirimPesan()">
       <label for="nama">Nama:</label>
       <input type="text" id="nama" name="nama" required />
 
@@ -24,19 +24,11 @@
         <option value="pemrograman">Pemrograman</option>
       </select>
 
-      <form onsubmit="return kirimPesan()">
-        <!-- input, select, etc -->
-        <button type="submit">Kirim</button>
-      </form>
-      
+      <button type="submit">Kirim</button>
       <a href="index.html" class="back-btn">Kembali ke Halaman Utama</a>
     </form>
   </div>      
-  <script>
-    function kirimPesan() {
-      alert("📩 Pesan Anda terkirim! Kami akan segera menghubungi Anda.");
-      return false;
-    }
-  </script>
+
+  <script src="Scrip.js"></script>
 </body>
 </html>

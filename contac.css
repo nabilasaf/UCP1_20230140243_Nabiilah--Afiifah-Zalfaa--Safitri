@@ -61,16 +61,15 @@ button:hover {
 }
 
 .back-btn {
-  display: inline-block;
-  margin-top: 20px;
   background: #7f8cfa;
-  padding: 12px 24px;
+  padding: 14px 24px;
   border-radius: 8px;
   color: white;
   text-decoration: none;
   font-weight: bold;
   box-shadow: 0 4px 10px rgba(127, 140, 250, 0.4);
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 .back-btn:hover {
